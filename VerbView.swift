@@ -16,7 +16,7 @@ struct VerbView: View {
         TextField("Enter Verb", text: $enteredWords.verb)
         
         NavigationLink("AdjectiveView") {
-            AdjectiveView()
+            AdjectiveView(enteredWords: $enteredWords)
         }
     }
 }

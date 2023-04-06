@@ -15,7 +15,7 @@ struct AdjectiveView: View {
         
         TextField("Enter Adjective", text: $enteredWords.adjective)
         NavigationLink("Summary View") {
-            SummaryView(enteredWords)
+            SummaryView(enteredWords: $enteredWords)
         }
     }
 }

@@ -13,7 +13,7 @@ struct NounView: View {
         
         TextField("Enter Noun", text: $enteredWords.noun)
         NavigationLink("Verb View") {
-            VerbView()
+            VerbView(enteredWords: $enteredWords)
         }
     }
 }
