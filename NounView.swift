@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NounView: View {
-    @State var enteredWords: MadLib
+    @State var enteredWords: MadLib = MadLib()
     var body: some View {
         
         TextField("Enter Noun", text: $enteredWords.noun)

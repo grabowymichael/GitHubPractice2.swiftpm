@@ -3,7 +3,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView{
-            NavigationLink("NounView", destination: NounView(enteredWords: <#MadLib#>))
+            NavigationLink("NounView", destination: NounView())
         }
         
     }
