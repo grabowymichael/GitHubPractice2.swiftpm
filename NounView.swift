@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct NounView: View {
+    @State var enteredWords: MadLib
     var body: some View {
+        
+        TextField("Enter Noun", text: $enteredWords.noun)
         NavigationLink("Verb View") {
             VerbView()
         }
