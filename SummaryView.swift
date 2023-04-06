@@ -10,7 +10,9 @@ import SwiftUI
 
 struct SummaryView: View{
     
+    @Binding var enteredWords:MadLib
+    
     var body: some View{
-        Text("Chief Keef drinks a Purple Beverage")
+        Text("\(enteredWords.noun) \(enteredWords.verb) a \(enteredWords.adjective) beverage.")
     }
 }
