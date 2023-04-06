@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct AdjectiveView: View {
+    
+    @Binding var enteredWords:MadLib
+    
     var body: some View {
+        
+        TextField("Enter Adjective", text: $enteredWords.adjective)
         NavigationLink("Summary View") {
-            SummaryView()
+            SummaryView(enteredWords)
         }
     }
 }
