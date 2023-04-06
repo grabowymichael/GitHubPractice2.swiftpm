@@ -5,10 +5,12 @@
 //  Created by Michael Grabowy on 4/6/23.
 //
 
-import Foundation
+import SwiftUI
 
 struct VerbView {
-    NavigationLink("AdjectiveView", destination: AdjectiveView())
-    
+    var body: some View {
+        NavigationLink("AdjectiveView") {
+            AdjectiveView()
+        }
     }
-
+}
