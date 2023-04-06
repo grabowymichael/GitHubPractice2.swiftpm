@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct VerbView {
+struct VerbView:View {
     var body: some View {
         NavigationLink("AdjectiveView") {
             AdjectiveView()
